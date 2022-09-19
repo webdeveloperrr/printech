@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <div class="max-w-7xl flex flex-wrap justify-between items-center mx-auto">
+        <a href="https://flowbite.com/" class="flex items-center">
+            <img src="../assets/images/logo.png" class="mr-3 h-6 sm:h-9"
+                 alt="Flowbite Logo">
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                <li>
+                    <a href="#" class="text-lg">О нас</a>
+                </li>
+                <li>
+                    <a href="#quality"  class="text-lg">Преимущества</a>
+                </li>
+                <li>
+                    <a href="#services"  class="text-lg">Услуги</a>
+                </li>
+                <li>
+                    <a href="#clients"  class="text-lg">Клиенты</a>
+                </li>
+                <li>
+                    <a href="#partners" class="text-lg">Партнеры</a>
+                </li>
+                <li>
+                    <a href="#contacts" class="text-lg">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--<div id="default-carousel" class="relative" data-carousel="static">-->
+<!--    &lt;!&ndash; Carousel wrapper &ndash;&gt;-->
+<!--    <div class="relative h-[40rem] overflow-hidden rounded-lg">-->
+<!--        &lt;!&ndash; Item 1 &ndash;&gt;-->
+<!--        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-blue-100"-->
+<!--             data-carousel-item="">-->
+<!--            <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Item 2 &ndash;&gt;-->
+<!--        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-yellow-100"-->
+<!--             data-carousel-item="">-->
+<!--            <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Item 3 &ndash;&gt;-->
+<!--        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20 bg-red-100"-->
+<!--             data-carousel-item="">-->
+<!--            <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Slider indicators &ndash;&gt;-->
+<!--    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">-->
+<!--        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800"-->
+<!--                aria-current="true" aria-label="Slide 1"-->
+<!--                data-carousel-slide-to="0"></button>-->
+<!--        <button type="button"-->
+<!--                class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"-->
+<!--                aria-current="false" aria-label="Slide 2"-->
+<!--                data-carousel-slide-to="1"></button>-->
+<!--        <button type="button"-->
+<!--                class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"-->
+<!--                aria-current="false" aria-label="Slide 3"-->
+<!--                data-carousel-slide-to="2"></button>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Slider controls &ndash;&gt;-->
+<!--    <button type="button"-->
+<!--            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"-->
+<!--            data-carousel-prev="">-->
+<!--        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">-->
+<!--            <svg aria-hidden="true"-->
+<!--                 class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"-->
+<!--                 stroke="currentColor" viewBox="0 0 24 24"-->
+<!--                 xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"-->
+<!--                                                          stroke-linejoin="round"-->
+<!--                                                          stroke-width="2"-->
+<!--                                                          d="M15 19l-7-7 7-7"></path></svg>-->
+<!--            <span class="sr-only">Previous</span>-->
+<!--        </span>-->
+<!--    </button>-->
+<!--    <button type="button"-->
+<!--            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"-->
+<!--            data-carousel-next="">-->
+<!--        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">-->
+<!--            <svg aria-hidden="true"-->
+<!--                 class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"-->
+<!--                 stroke="currentColor" viewBox="0 0 24 24"-->
+<!--                 xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"-->
+<!--                                                          stroke-linejoin="round"-->
+<!--                                                          stroke-width="2"-->
+<!--                                                          d="M9 5l7 7-7 7"></path></svg>-->
+<!--            <span class="sr-only">Next</span>-->
+<!--        </span>-->
+<!--    </button>-->
+<!--</div>-->
+
+
+<section id="about"
+         class="max-w-7xl flex justify-center items-center mx-auto w-full py-20">
+    <div class="grid grid-cols-5 w-full">
+        <div class="col-span-2">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white">
+                О компании
+            </h2>
+            <p class="text-lg mb-5">
+                Europrint - надежный партнер для развития и успеха вашего бизнеса. Наша
+                компания очень рада предложить Вам свои услуги с использованием новейших
+                технологий и с командой высококвалифицированных специалистов. Наша
+                компания готова делать все, чтобы создать имидж вашего продукта и
+                доставить его, тем самым, увеличивая ваши продажи и предоставляя вам
+                возможность оказаться на рынке.
+            </p>
+            <a href="tel:934758075" class="bg-main-blue px-4 py-3 rounded text-white">Связаться</a>
+        </div>
+        <div class="col-span-3">
+            <img src="../assets/images/banner.png" class="w-[40rem] block mx-auto"
+                 alt="">
+        </div>
+    </div>
+</section>
+
+
+<section id="quality"
+         class="max-w-7xl flex justify-center items-center mx-auto w-full py-20">
+    <div class="grid grid-cols-5 w-full">
+        <div class="col-span-3 grid grid-cols-3 shadow-xl rounded-lg overflow-hidden">
+            <div class="bg-main-blue flex items-center justify-center px-6 py-12">
+                <div>
+                    <img src="../assets/images/icons/billboard.png" alt=""
+                         class="block mx-auto w-16 mb-4">
+                    <p class="text-white text-center">
+                        Цифровая и офсетная печати
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white flex items-center justify-center px-6 py-12">
+                <div>
+                    <img src="../assets/images/icons/dollar.png" alt=""
+                         class="block mx-auto w-16 mb-4">
+                    <p class="text-center">
+                        Удобная цена
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-main-blue flex items-center justify-center px-6 py-12">
+                <div>
+                    <img src="../assets/images/icons/design.png" alt=""
+                         class="block mx-auto w-16 mb-4">
+                    <p class="text-white text-center">
+                        Дизайн
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white flex items-center justify-center px-6 py-12">
+                <div>
+                    <img src="../assets/images/icons/quality.png" alt=""
+                         class="block mx-auto w-16 mb-4">
+                    <p class="text-center">
+                        Качество
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-main-blue flex items-center justify-center px-6 py-12">
+                <div>
+                    <img src="../assets/images/icons/speed.png" alt=""
+                         class="block mx-auto w-16 mb-4">
+                    <p class="text-white text-center">
+                        Эффективность
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-white flex items-center justify-center px-6 py-12">
+                <div>
+                    <img src="../assets/images/icons/printer.png" alt=""
+                         class="block mx-auto w-16 mb-4">
+                    <p class="text-center">
+                        Широкоформатная печать
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-span-2 px-12">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white">
+                Что мы вам предлагаем?
+            </h2>
+            <p class="text-lg">
+                Изготовление и размещение наружной рекламы: оформление фасадов,
+                изготовление объемных (светодиодных, псевдообъемных) букв, световые
+                короба, пилоны, вывески, указатели, панель-кронштейны, выставочные стенды;
+                брендирование автомобилей (выклейка авто); плоттерная резка и т.д.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="services" class="max-w-7xl  mx-auto w-full py-20">
+    <h2 class="mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white text-center">
+        Наши услуги</h2>
+
+    <div class="grid grid-cols-4 gap-5">
+        <div>
+            <img src="../assets/images/services/beyjiklar.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/birka2.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/bloknot.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/buklet.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/bloknot2.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/calendar.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/doorhanger.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/flaer.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/folder.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/futbolka.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/katalog.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/kepka.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/taklifnoma.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/vizitka.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/bokalga%20pechat%202.png" alt=""
+                 class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/services/paketi%20burger.png" alt=""
+                 class="w-full">
+        </div>
+    </div>
+</section>
+
+<section id="clients" class="max-w-7xl  mx-auto w-full py-20">
+    <h2 class="mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white text-center">
+        Наши клиенты</h2>
+    <div class="grid grid-cols-6 gap-5">
+        <div>
+            <img src="../assets/images/customers/1.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/2.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/3.png" alt=""
+                 class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/4.png" alt="" class="w-full">
+        </div>
+
+        <div>
+            <img src="../assets/images/customers/5.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/6.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/7.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/8.png" alt="" class="w-full">
+        </div>
+
+        <div>
+            <img src="../assets/images/customers/9.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/10.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/11.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/customers/12.png" alt="" class="w-full">
+        </div>
+    </div>
+</section>
+
+
+<section id="partners" class="max-w-7xl  mx-auto w-full py-20">
+    <h2 class="mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white text-center">
+        Наши партнеры</h2>
+    <div class="grid grid-cols-4 gap-5">
+        <div>
+            <img src="../assets/images/partners/canon.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/partners/epson.png" alt="" class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/partners/xerox.png" alt=""
+                 class="w-full">
+        </div>
+        <div>
+            <img src="../assets/images/partners/konica%20minolta.png" alt=""
+                 class="w-full">
+        </div>
+    </div>
+</section>
+
+<section id="contacts"
+         class="max-w-7xl mx-auto w-full py-20">
+    <h2 class="mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white text-center">
+        Контакты</h2>
+    <div class="grid grid-cols-5 w-full">
+
+        <div class="col-span-2 overflow-hidden flex flex-col items-start">
+            <div class="flex items-center mb-6">
+                <span class="w-16 h-12 rounded-full bg-main-blue flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                         class="w-6 h-6 text-white">
+  <path stroke-linecap="round" stroke-linejoin="round"
+        d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"/>
+</svg>
+                </span>
+                <p class="w-full">
+                    <span class="text-xs block">Звоните по номеру</span>
+                    <span class="font-semibold block">+998 (91) 444-00-35</span>
+                    <span class="font-semibold block">+998 (91) 444-00-35</span>
+                </p>
+            </div>
+
+            <div class="flex items-center mb-6">
+                <span class="w-16 h-12 rounded-full bg-main-blue flex items-center justify-center mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                </svg>
+                </span>
+                <p class="w-full">
+                    <span class="text-xs block">Адрес:</span>
+                    <span class="font-semibold block">Buxoro shahri, Sadriddin Ayniy ko'chasi 16/29</span>
+                    <span class="font-semibold block">Gorgaz, eski kodak yonidan 100 metr ichkarida</span>
+                </p>
+            </div>
+
+            <div class="flex items-center">
+                <span class="w-16 h-12 rounded-full bg-main-blue flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                         class="w-6 h-6 text-white">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                    </svg>
+                </span>
+                <p class="w-full">
+                    <span class="text-xs block">Звоните по номеру</span>
+                    <span class="font-semibold block">+998 (97) 738-12-20</span>
+                    <span class="font-semibold block">+998 (97) 738-12-20</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-span-3 px-12">
+
+            <div id="map" class="w-full h-[20rem] rounded-lg overflow-hidden"></div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="max-w-7xl  mx-auto w-full py-8 border-t-2 border-gray-200">
+    <div class="grid grid-cols-2">
+        <div>
+            <img src="../assets/images/logo.png" class="w-[8rem]" alt="">
+        </div>
+        <div class="flex justify-end">
+            <div class="flex items-center">
+                <span class="flex items-center justify-center mr-4">
+                    <img src="../assets/images/icons/telegram.png" class="block w-10" alt="">
+                </span>
+                <span class="flex items-center justify-center mr-4">
+                    <img src="../assets/images/icons/facebook.png" class="block w-10" alt="">
+                </span>
+                <span class="flex items-center justify-center mr-4">
+                    <img src="../assets/images/icons/instagram.png" class="block w-10" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&apikey=60445215-6d3a-4f88-87fe-8d52b72e5bc9"></script>
+<script>
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map('map', {
+                center: [39.764578, 64.432237],
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+            myPlacemark = new ymaps.Placemark(myMap.getCenter());
+
+        myMap.geoObjects.add(myPlacemark);
+
+        myPlacemark.events
+            .add('mouseenter', function (e) {
+                // Ссылку на объект, вызвавший событие,
+                // можно получить из поля 'target'.
+                e.get('target').options.set('preset', 'islands#greenIcon');
+            })
+            .add('mouseleave', function (e) {
+                e.get('target').options.unset('preset');
+            });
+    }
+</script>
+</body>
+</html>
