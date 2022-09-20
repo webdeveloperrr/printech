@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link href="dist/output.css" rel="stylesheet">
+    <style>
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
-<body>
+<body class="font-Opensans">
 
-<nav class="bg-white border-gray-200 sm:px-4 md:px-0 py-4 md:py-2.5 rounded dark:bg-gray-900">
+<nav class="bg-white border-2 border-gray-200 sm:px-4 md:px-0 py-4 md:py-2.5 rounded dark:bg-gray-900 ">
     <div class="max-w-7xl flex flex-wrap justify-between items-center mx-auto px-6 lg:px-16 xl:px-8">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="assets/images/logo.png" class="mr-3 w-20 md:w-28"
@@ -31,13 +41,13 @@
                     <a href="#" class="lg:text-lg">О нас</a>
                 </li>
                 <li>
-                    <a href="#quality"  class="lg:text-lg">Преимущества</a>
+                    <a href="#quality" class="lg:text-lg">Преимущества</a>
                 </li>
                 <li>
-                    <a href="#services"  class="lg:text-lg">Услуги</a>
+                    <a href="#services" class="lg:text-lg">Услуги</a>
                 </li>
                 <li>
-                    <a href="#clients"  class="lg:text-lg">Клиенты</a>
+                    <a href="#clients" class="lg:text-lg">Клиенты</a>
                 </li>
                 <li>
                     <a href="#partners" class="lg:text-lg">Партнеры</a>
@@ -45,11 +55,15 @@
                 <li>
                     <a href="#contacts" class="lg:text-lg">Контакты</a>
                 </li>
+
+                <li>
+                    <a href="#" class="lg:text-lg bg-main-blue text-white p-2 rounded">+998
+                        (91) 444-00-35</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
-
 
 
 <section id="about"
@@ -60,17 +74,18 @@
                 О компании
             </h2>
             <p class="xl:text-lg mb-5">
-                Europrint - надежный партнер для развития и успеха вашего бизнеса. Наша
+                Printech - надежный партнер для развития и успеха вашего бизнеса. Наша
                 компания очень рада предложить Вам свои услуги с использованием новейших
                 технологий и с командой высококвалифицированных специалистов. Наша
                 компания готова делать все, чтобы создать имидж вашего продукта и
                 доставить его, тем самым, увеличивая ваши продажи и предоставляя вам
                 возможность оказаться на рынке.
             </p>
-            <a href="tel:934758075" class="bg-main-blue px-4 py-3 rounded text-white">Связаться</a>
+            <a href="tel:914440035" class="bg-main-blue px-4 py-3 rounded text-white">Связаться</a>
         </div>
         <div class="col-span-5 lg:col-span-3">
-            <img src="assets/images/banner.png" class="lg:w-[30rem] xl:w-[40rem] block mx-auto"
+            <img src="assets/images/banner.png"
+                 class="lg:w-[30rem] xl:w-[40rem] block mx-auto"
                  alt="">
         </div>
     </div>
@@ -148,7 +163,8 @@
                 <p class="text-lg">
                     Изготовление и размещение наружной рекламы: оформление фасадов,
                     изготовление объемных (светодиодных, псевдообъемных) букв, световые
-                    короба, пилоны, вывески, указатели, панель-кронштейны, выставочные стенды;
+                    короба, пилоны, вывески, указатели, панель-кронштейны, выставочные
+                    стенды;
                     брендирование автомобилей (выклейка авто); плоттерная резка и т.д.
                 </p>
             </div>
@@ -156,17 +172,24 @@
         </div>
     </div>
 </section>
-<section id="services" class="max-w-7xl  mx-auto w-full py-16 md:py-20 px-6 lg:px-16 xl:px-8">
+<section id="services"
+         class="max-w-7xl  mx-auto w-full py-16 md:py-20 px-6 lg:px-16 xl:px-8">
     <h2 class="mb-8 md:mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white md:text-center">
-        Наши услуги</h2>
+        Что мы печатаем?</h2>
 
     <div class="grid grid-cols-4 gap-5">
         <div class="col-span-2 md:col-span-1">
-            <img src="assets/images/services/beyjiklar.png" alt="" class="w-full">
+            <img src="assets/images/services/vizitka.png" alt="" class="w-full">
         </div>
         <div class="col-span-2 md:col-span-1">
-            <img src="assets/images/services/birka2.png" alt="" class="w-full">
+            <img src="assets/images/services/taklifnoma.png" alt="" class="w-full">
         </div>
+
+        <div class="col-span-2 md:col-span-1">
+            <img src="assets/images/services/bokalga%20pechat%202.png" alt=""
+                 class="w-full">
+        </div>
+
         <div class="col-span-2 md:col-span-1">
             <img src="assets/images/services/bloknot.png" alt="" class="w-full">
         </div>
@@ -197,71 +220,92 @@
         <div class="col-span-2 md:col-span-1">
             <img src="assets/images/services/kepka.png" alt="" class="w-full">
         </div>
-        <div class="col-span-2 md:col-span-1">
-            <img src="assets/images/services/taklifnoma.png" alt="" class="w-full">
-        </div>
-        <div class="col-span-2 md:col-span-1">
-            <img src="assets/images/services/vizitka.png" alt="" class="w-full">
-        </div>
-        <div class="col-span-2 md:col-span-1">
-            <img src="assets/images/services/bokalga%20pechat%202.png" alt=""
-                 class="w-full">
-        </div>
+
         <div class="col-span-2 md:col-span-1">
             <img src="assets/images/services/paketi%20burger.png" alt=""
                  class="w-full">
         </div>
+
+        <div class="col-span-2 md:col-span-1">
+            <img src="assets/images/services/beyjiklar.png" alt="" class="w-full">
+        </div>
+        <div class="col-span-2 md:col-span-1">
+            <img src="assets/images/services/birka2.png" alt="" class="w-full">
+        </div>
     </div>
 </section>
+
 <section id="clients" class="bg-gray-50">
     <div class="max-w-7xl  mx-auto w-full py-16 md:py-20 px-6 lg:px-16 xl:px-8 ">
         <h2 class="mb-8 md:mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white md:text-center">
             Наши клиенты
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-5 grid-cols-6 gap-5">
-            <div>
-                <img src="assets/images/customers/1.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/2.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/3.png" alt=""
-                     class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/4.png" alt="" class="w-full">
-            </div>
+        <!--        grid grid-cols-2 md:grid-cols-5 grid-cols-6 gap-5/-->
+        <div class=" swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/1.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/2.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/3.png" alt=""
+                         class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/4.png" alt="" class="w-full">
+                </div>
 
-            <div>
-                <img src="assets/images/customers/5.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/6.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/7.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/8.png" alt="" class="w-full">
-            </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/5.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/6.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/7.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/8.png" alt="" class="w-full">
+                </div>
 
-            <div>
-                <img src="assets/images/customers/9.png" alt="" class="w-full">
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/9.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/10.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/11.png" alt="" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/customers/12.png" alt="" class="w-full">
+                </div>
             </div>
-            <div>
-                <img src="assets/images/customers/10.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/11.png" alt="" class="w-full">
-            </div>
-            <div>
-                <img src="assets/images/customers/12.png" alt="" class="w-full">
+            <div class="flex justify-center mt-4 py-4">
+                <span class="button-prev text-main-blue bg-white shadow-lg w-[3rem] h-[3rem] rounded-full flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                         class="w-6 h-6 text-main-blue">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"/>
+                    </svg>
+                </span>
+                <span class="button-next text-main-blue bg-white shadow-lg w-[3rem] h-[3rem] rounded-full flex justify-center items-center ml-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                         class="w-6 h-6 text-main-blue">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                    </svg>
+                </span>
             </div>
         </div>
     </div>
 </section>
-<section id="partners" class="max-w-7xl  mx-auto w-full py-16 md:py-20  px-6 lg:px-16 xl:px-8">
+<section id="partners"
+         class="max-w-7xl  mx-auto w-full py-16 md:py-20  px-6 lg:px-16 xl:px-8">
     <h2 class="mb-8 md:mb-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl dark:text-white md:text-center">
         Наши партнеры</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -353,14 +397,17 @@
         </div>
         <div class="flex justify-end">
             <div class="flex items-center">
+                <a href="https://t.me/PrintecUz" class="flex items-center justify-center mr-4">
+                    <img src="assets/images/icons/telegram.png" class="block w-8 md:w-10"
+                         alt="">
+                </a>
                 <span class="flex items-center justify-center mr-4">
-                    <img src="assets/images/icons/telegram.png" class="block w-8 md:w-10" alt="">
+                    <img src="assets/images/icons/facebook.png" class="block w-8 md:w-10"
+                         alt="">
                 </span>
                 <span class="flex items-center justify-center mr-4">
-                    <img src="assets/images/icons/facebook.png" class="block w-8 md:w-10" alt="">
-                </span>
-                <span class="flex items-center justify-center mr-4">
-                    <img src="assets/images/icons/instagram.png" class="block w-8 md:w-10" alt="">
+                    <img src="assets/images/icons/instagram.png" class="block w-8 md:w-10"
+                         alt="">
                 </span>
             </div>
         </div>
@@ -368,6 +415,7 @@
 </footer>
 
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&apikey=60445215-6d3a-4f88-87fe-8d52b72e5bc9"></script>
 <script>
     ymaps.ready(init);
@@ -393,6 +441,48 @@
                 e.get('target').options.unset('preset');
             });
     }
+
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40
+            }
+        }
+    });
+
+
 </script>
+
 </body>
 </html>
